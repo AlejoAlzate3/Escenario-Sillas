@@ -1,0 +1,187 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    height: calc(100% - 90vh);
+}
+
+.container-showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+}
+
+.showcase{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small{
+    margin-left: 5px;
+    font-weight: bold;
+    color: #181717
+}
+
+.seat-showcase.purchased{
+    background-color: red;
+}
+
+.seat-showcase.select{
+    background-color: green;
+}
+
+.selected-seats {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.container #calendario {
+    width: 100%;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container .img-escenario{
+    width: 90px;
+    height: 60px;
+}
+
+.container .img-escenario img{
+    width: 100%;
+    height: 100%;
+}
+
+.container .p-mapaEsc{
+    font-weight: bold;
+    font-size: 1em;
+    color: #777;
+}
+
+main #datepicker{
+    margin: 10px;
+    padding: 0;
+    height: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.4rem;
+    height: 90vh;
+}
+
+.footer .h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+.footer .p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.footer .btn-comprar{
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+    font-size: 1em;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .boton-c{
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    text-align: left;
+    bottom: 0;
+    height: calc(100% - 90vh);
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .showcase {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: start;
+    }
+
+    h3 {
+        margin-bottom: 0;
+    }
+
+    .footer .h2 {
+        font-size: 1.2em;
+    }
+
+    .footer .p {
+        font-size: 0.7em;
+    }
+
+    .footer .btn-comprar{
+        width: 100%;
+        font-size: 1em;
+    }
+}

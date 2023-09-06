@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mapa de Escenario con Sillas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="description" content="Mapa de Escenario con Sillas">
+    <meta name="keywords" content="Mapa de Escenario con Sillas">
+    <meta name="author" content="Mapa de Escenario con Sillas">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.5.1/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.5.1/ol.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+    <script defer type="module" src="appPrueba.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Mapa de Escenario con Sillas</h1>
+
+        <div class="container-showcase">
+            <ul class="showcase">
+                <li>
+                    <div class="seat-showcase"></div>
+                    <img src="./img/avaible.png" alt="avaible" width="20">
+                    <small>Disponible</small>
+                </li>
+                <li>
+                    <div class="seat-showcase select"></div>
+                    <img src="./img/select.png" alt="selected" width="20">
+                    <small>Seleccionada</small>
+                </li>
+                <li>
+                    <div class="seat-showcase purchased"></div>
+                    <img src="./img/purchased.png" alt="purchased" width="20">
+                    <small>Comprada</small>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="calendario">
+            <input type="text" id="datepicker" placeholder="Selecciona una fecha">
+            <p class="p-mapaEsc">Mapa Escenario</p>
+            <img class="img-escenario" src="./img/MapaEscenario.png" alt="mapa escenario">
+        </section>
+
+        <div id="map"></div>
+    </main>
+
+    <div class="footer">
+        <div class="selected-seats">
+            <h2 class="h2">Asientos Seleccionados</h2>
+            <p class="p">(Para deseleccionar las sillas dar doble clic)</p>
+            <ul id="selected-seats-list"></ul>
+            <ul id="events-list"></ul>
+            <div class="boton-c">
+                <button class="btn-comprar" id="confirmButton">Comprar Boleto</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
